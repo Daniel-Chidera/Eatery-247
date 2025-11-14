@@ -1,0 +1,267 @@
+/* ========================================
+   MENU HEADER
+======================================== */
+.menu-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white-bg) 100%);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.menu-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* ========================================
+   MENU FILTER
+======================================== */
+.menu-filter {
+    padding: 2rem 0;
+    background: var(--white-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background: var(--white-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-bg);
+}
+
+/* ========================================
+   MENU SECTION
+======================================== */
+.menu-section {
+    padding: 4rem 0;
+    background: var(--white-bg);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* ========================================
+   MENU ITEM CARD
+======================================== */
+.menu-item {
+    background: var(--white-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+    border-color: var(--accent-color);
+}
+
+.menu-item.hidden {
+    display: none;
+}
+
+.menu-item-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: var(--light-bg);
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.menu-item:hover .menu-item-image img {
+    transform: scale(1.05);
+}
+
+.menu-item-info {
+    padding: 1.5rem;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.menu-item-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+    flex: 1;
+}
+
+.menu-item-info .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.menu-item-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--light-bg);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+/* ========================================
+   MENU CALL TO ACTION
+======================================== */
+.menu-cta {
+    padding: 4rem 0;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.menu-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.menu-cta p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+@media (max-width: 968px) {
+    .menu-header {
+        padding: 6rem 0 3rem;
+    }
+
+    .menu-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-header h1 {
+        font-size: 2rem;
+    }
+
+    .menu-header p {
+        font-size: 1rem;
+    }
+
+    .filter-buttons {
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-cta h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-header {
+        padding: 5rem 0 2rem;
+    }
+
+    .menu-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+
+    .menu-item-image {
+        height: 180px;
+    }
+
+    .menu-item-info {
+        padding: 1rem;
+    }
+
+    .menu-item-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-item-info .price {
+        margin-left: 0;
+    }
+}

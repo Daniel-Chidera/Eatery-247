@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our delicious menu - Breakfast, Lunch, and Dinner">
+    <title>Menu - Eatery 24/7</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">EATERY 24/7</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="order.html" class="nav-link">Order</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our delicious selection available 24/7</p>
+        </div>
+    </section>
+
+    <!-- Menu Filter -->
+    <section class="menu-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                <button class="filter-btn" data-category="lunch">Lunch</button>
+                <button class="filter-btn" data-category="dinner">Dinner</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-grid" id="menuGrid">
+                
+                <!-- Breakfast Items -->
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop" alt="Pancakes">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Fluffy Pancakes</h3>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p>Stack of buttermilk pancakes with maple syrup, fresh berries, and whipped cream</p>
+                        <span class="category-badge">Breakfast</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop" alt="Eggs Benedict">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Eggs Benedict</h3>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p>Poached eggs on English muffin with Canadian bacon and hollandaise sauce</p>
+                        <span class="category-badge">Breakfast</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop" alt="Avocado Toast">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Avocado Toast</h3>
+                            <span class="price">$11.99</span>
+                        </div>
+                        <p>Smashed avocado on sourdough bread with cherry tomatoes and poached egg</p>
+                        <span class="category-badge">Breakfast</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breakfast">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=300&fit=crop" alt="French Toast">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>French Toast</h3>
+                            <span class="price">$13.99</span>
+                        </div>
+                        <p>Thick-cut brioche French toast with caramelized bananas and cinnamon</p>
+                        <span class="category-badge">Breakfast</span>
+                    </div>
+                </div>
+
+                <!-- Lunch Items -->
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Burger">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Classic Burger</h3>
+                            <span class="price">$16.99</span>
+                        </div>
+                        <p>Angus beef patty with lettuce, tomato, cheese, and special sauce on brioche bun</p>
+                        <span class="category-badge">Lunch</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Salad">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Caesar Salad</h3>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p>Crisp romaine lettuce with parmesan, croutons, and creamy Caesar dressing</p>
+                        <span class="category-badge">Lunch</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Pasta">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Pasta Carbonara</h3>
+                            <span class="price">$18.99</span>
+                        </div>
+                        <p>Creamy pasta with pancetta, parmesan cheese, and black pepper</p>
+                        <span class="category-badge">Lunch</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="lunch">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1619740455993-9e0691d3e3d8?w=400&h=300&fit=crop" alt="Sandwich">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Club Sandwich</h3>
+                            <span class="price">$15.99</span>
+                        </div>
+                        <p>Triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayo</p>
+                        <span class="category-badge">Lunch</span>
+                    </div>
+                </div>
+
+                <!-- Dinner Items -->
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Steak">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Grilled Ribeye</h3>
+                            <span class="price">$45.99</span>
+                        </div>
+                        <p>Premium ribeye steak with garlic butter, mashed potatoes, and asparagus</p>
+                        <span class="category-badge">Dinner</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Salmon">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Grilled Salmon</h3>
+                            <span class="price">$32.99</span>
+                        </div>
+                        <p>Fresh Atlantic salmon with lemon butter sauce and roasted vegetables</p>
+                        <span class="category-badge">Dinner</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&h=300&fit=crop" alt="Lamb Chops">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Lamb Chops</h3>
+                            <span class="price">$38.99</span>
+                        </div>
+                        <p>Herb-crusted lamb chops with mint sauce and seasonal vegetables</p>
+                        <span class="category-badge">Dinner</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dinner">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Risotto">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Mushroom Risotto</h3>
+                            <span class="price">$26.99</span>
+                        </div>
+                        <p>Creamy arborio rice with wild mushrooms, parmesan, and truffle oil</p>
+                        <span class="category-badge">Dinner</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="menu-cta">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>Place your order now for delivery or pickup</p>
+            <a href="order.html" class="btn btn-primary">Order Online</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EATERY 24/7</h3>
+                    <p>Fine dining experience, available around the clock.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Gourmet Street</li>
+                        <li>+1 (555) 247-2477</li>
+                        <li>hello@eatery247.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eatery 24/7. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
