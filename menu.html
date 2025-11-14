@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our delicious menu - Breakfast, Lunch, and Dinner">
+    <meta name="description" content="Explore our delicious Nigerian menu">
     <title>Menu - Eatery 24/7</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/menu.css">
@@ -34,7 +34,7 @@
     <section class="menu-header">
         <div class="container">
             <h1>Our Menu</h1>
-            <p>Discover our delicious selection available 24/7</p>
+            <p>Discover our delicious Nigerian selection available 24/7</p>
         </div>
     </section>
 
@@ -43,9 +43,12 @@
         <div class="container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">All Items</button>
-                <button class="filter-btn" data-category="breakfast">Breakfast</button>
-                <button class="filter-btn" data-category="lunch">Lunch</button>
-                <button class="filter-btn" data-category="dinner">Dinner</button>
+                <button class="filter-btn" data-category="starters">Starters</button>
+                <button class="filter-btn" data-category="main">Main Dishes</button>
+                <button class="filter-btn" data-category="proteins">Proteins</button>
+                <button class="filter-btn" data-category="soups">Soups</button>
+                <button class="filter-btn" data-category="specials">Specials</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
             </div>
         </div>
     </section>
@@ -55,174 +58,401 @@
         <div class="container">
             <div class="menu-grid" id="menuGrid">
                 
-                <!-- Breakfast Items -->
-                <div class="menu-item" data-category="breakfast">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop" alt="Pancakes">
+                        <img src="assets/images/nigerian-goat-meat-pepper-soup-3-500x450.webp" alt="Pepper Soup">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Fluffy Pancakes</h3>
-                            <span class="price">$12.99</span>
+                            <h3>Pepper Soup</h3>
+                            <span class="price">₦3,500</span>
                         </div>
-                        <p>Stack of buttermilk pancakes with maple syrup, fresh berries, and whipped cream</p>
-                        <span class="category-badge">Breakfast</span>
+                        <p>Spicy and aromatic soup with choice of assorted meat or fish</p>
+                        <span class="category-badge">Starters</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="breakfast">
+                <div class="menu-item" data-category="starters">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop" alt="Eggs Benedict">
+                        <img src="assets/images/Nigerian akara.jpg" alt="Akara Bites">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Eggs Benedict</h3>
-                            <span class="price">$15.99</span>
+                            <h3>Akara Bites</h3>
+                            <span class="price">₦200</span>
                         </div>
-                        <p>Poached eggs on English muffin with Canadian bacon and hollandaise sauce</p>
-                        <span class="category-badge">Breakfast</span>
+                        <p>Crispy bean cakes served with pepper sauce</p>
+                        <span class="category-badge">Starters</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="breakfast">
+                <div class="menu-item" data-category="starters">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop" alt="Avocado Toast">
+                        <img src="assets/images/suya.jpeg" alt="Suya Skewers">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Avocado Toast</h3>
-                            <span class="price">$11.99</span>
+                            <h3>Suya Skewers</h3>
+                            <span class="price">₦3,000</span>
                         </div>
-                        <p>Smashed avocado on sourdough bread with cherry tomatoes and poached egg</p>
-                        <span class="category-badge">Breakfast</span>
+                        <p>Spicy grilled meat skewers with traditional suya spice</p>
+                        <span class="category-badge">Starters</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="breakfast">
+                <!-- Main Dishes -->
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=300&fit=crop" alt="French Toast">
+                        <img src="assets/images/jollof.jpeg" alt="Jollof Rice">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>French Toast</h3>
-                            <span class="price">$13.99</span>
+                            <h3>Jollof Rice</h3>
+                            <span class="price">₦3,500</span>
                         </div>
-                        <p>Thick-cut brioche French toast with caramelized bananas and cinnamon</p>
-                        <span class="category-badge">Breakfast</span>
+                        <p>Classic Nigerian party rice cooked in rich tomato sauce</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <!-- Lunch Items -->
-                <div class="menu-item" data-category="lunch">
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Burger">
+                        <img src="assets/images/fried rice.jpeg" alt="Fried Rice">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Classic Burger</h3>
-                            <span class="price">$16.99</span>
+                            <h3>Fried Rice</h3>
+                            <span class="price">₦3,500</span>
                         </div>
-                        <p>Angus beef patty with lettuce, tomato, cheese, and special sauce on brioche bun</p>
-                        <span class="category-badge">Lunch</span>
+                        <p>Perfectly seasoned rice with mixed vegetables</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="lunch">
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Salad">
+                        <img src="assets/images/ofada rice.jpeg" alt="Ofada Rice">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Caesar Salad</h3>
-                            <span class="price">$14.99</span>
+                            <h3>Ofada Rice & Ayamase</h3>
+                            <span class="price">₦4,500</span>
                         </div>
-                        <p>Crisp romaine lettuce with parmesan, croutons, and creamy Caesar dressing</p>
-                        <span class="category-badge">Lunch</span>
+                        <p>Local unpolished rice served with spicy green pepper sauce</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="lunch">
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Pasta">
+                        <img src="assets/images/egusi.jpeg" alt="Eba & Egusi">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Pasta Carbonara</h3>
-                            <span class="price">$18.99</span>
+                            <h3>Eba & Egusi</h3>
+                            <span class="price">₦3,000</span>
                         </div>
-                        <p>Creamy pasta with pancetta, parmesan cheese, and black pepper</p>
-                        <span class="category-badge">Lunch</span>
+                        <p>Cassava flour swallow with rich melon seed soup</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="lunch">
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1619740455993-9e0691d3e3d8?w=400&h=300&fit=crop" alt="Sandwich">
+                        <img src="assets/images/amala.jpeg" alt="Amala & Gbegiri">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Club Sandwich</h3>
-                            <span class="price">$15.99</span>
+                            <h3>Amala & Gbegiri</h3>
+                            <span class="price">₦3,200</span>
                         </div>
-                        <p>Triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayo</p>
-                        <span class="category-badge">Lunch</span>
+                        <p>Yam flour swallow with beans soup and ewedu</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <!-- Dinner Items -->
-                <div class="menu-item" data-category="dinner">
+                <div class="menu-item" data-category="main">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Steak">
+                        <img src="assets/images/fufu and oha.jpeg" alt="Fufu & Oha Soup">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Grilled Ribeye</h3>
-                            <span class="price">$45.99</span>
+                            <h3>Fufu & Oha Soup</h3>
+                            <span class="price">₦3,800</span>
                         </div>
-                        <p>Premium ribeye steak with garlic butter, mashed potatoes, and asparagus</p>
-                        <span class="category-badge">Dinner</span>
+                        <p>Smooth cassava fufu with traditional Oha leaf soup</p>
+                        <span class="category-badge">Main Dishes</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="dinner">
+                <!-- Proteins -->
+                <div class="menu-item" data-category="proteins">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Salmon">
+                        <img src="assets/images/grilled chicken.jpeg" alt="Grilled Chicken">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Grilled Salmon</h3>
-                            <span class="price">$32.99</span>
+                            <h3>Grilled Chicken</h3>
+                            <span class="price">₦5,000</span>
                         </div>
-                        <p>Fresh Atlantic salmon with lemon butter sauce and roasted vegetables</p>
-                        <span class="category-badge">Dinner</span>
+                        <p>Perfectly seasoned and grilled to perfection</p>
+                        <span class="category-badge">Proteins</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="dinner">
+                <div class="menu-item" data-category="proteins">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&h=300&fit=crop" alt="Lamb Chops">
+                        <img src="assets/images/goat meat.jpg" alt="Goat Meat">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Lamb Chops</h3>
-                            <span class="price">$38.99</span>
+                            <h3>Goat Meat</h3>
+                            <span class="price">₦8,500</span>
                         </div>
-                        <p>Herb-crusted lamb chops with mint sauce and seasonal vegetables</p>
-                        <span class="category-badge">Dinner</span>
+                        <p>Tender grilled or fried goat meat portions</p>
+                        <span class="category-badge">Proteins</span>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="dinner">
+                <div class="menu-item" data-category="proteins">
                     <div class="menu-item-image">
-                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Risotto">
+                        <img src="assets/images/peppered turkey.jpeg" alt="Peppered Turkey">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
-                            <h3>Mushroom Risotto</h3>
-                            <span class="price">$26.99</span>
+                            <h3>Peppered Turkey</h3>
+                            <span class="price">₦12,000</span>
                         </div>
-                        <p>Creamy arborio rice with wild mushrooms, parmesan, and truffle oil</p>
-                        <span class="category-badge">Dinner</span>
+                        <p>Succulent turkey in spicy pepper sauce</p>
+                        <span class="category-badge">Proteins</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="proteins">
+                    <div class="menu-item-image">
+                        <img src="assets/images/snail.jpeg" alt="Snail">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Snail</h3>
+                            <span class="price">₦10,000</span>
+                        </div>
+                        <p>Premium cooked snail delicacy</p>
+                        <span class="category-badge">Proteins</span>
+                    </div>
+                </div>
+
+                <!-- Soups -->
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/egusi soup.jpg" alt="Egusi Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Egusi Soup</h3>
+                            <span class="price">₦2,500</span>
+                        </div>
+                        <p>Rich melon seed soup with vegetables and meat</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/ogbono.jpeg" alt="Ogbono Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Ogbono Soup</h3>
+                            <span class="price">₦2,500</span>
+                        </div>
+                        <p>Draw soup made from ground ogbono seeds</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/okro.jpeg" alt="Okra Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Okra Soup</h3>
+                            <span class="price">₦2,200</span>
+                        </div>
+                        <p>Fresh okra soup with assorted meat and fish</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/vegetable.jpeg" alt="Edikang Ikong">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Vegetable Soup (Edikang Ikong)</h3>
+                            <span class="price">₦3,000</span>
+                        </div>
+                        <p>Premium vegetable soup with fluted pumpkin leaves</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/afang.jpeg" alt="Afang Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Afang Soup</h3>
+                            <span class="price">₦3,000</span>
+                        </div>
+                        <p>Nutritious soup made with afang leaves and waterleaf</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/bitter leaf soup.jpeg" alt="Bitterleaf Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Bitterleaf Soup</h3>
+                            <span class="price">₦2,800</span>
+                        </div>
+                        <p>Traditional soup with bitterleaf and assorted ingredients</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="soups">
+                    <div class="menu-item-image">
+                        <img src="assets/images/oha.jpeg" alt="Oha Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Oha Soup</h3>
+                            <span class="price">₦3,200</span>
+                        </div>
+                        <p>Special soup with unique Oha leaves</p>
+                        <span class="category-badge">Soups</span>
+                    </div>
+                </div>
+
+                <!-- Specials -->
+                <div class="menu-item" data-category="specials">
+                    <div class="menu-item-image">
+                        <img src="assets/images/nkwobi.webp" alt="Nkwobi">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Nkwobi</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                        <p>Spicy cow foot in palm oil sauce with utazi leaves</p>
+                        <span class="category-badge">Specials</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="specials">
+                    <div class="menu-item-image">
+                        <img src="assets/images/isi ewu.jpeg" alt="Isi Ewu">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Isi Ewu</h3>
+                            <span class="price">₦6,000</span>
+                        </div>
+                        <p>Traditional spiced goat head delicacy</p>
+                        <span class="category-badge">Specials</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="specials">
+                    <div class="menu-item-image">
+                        <img src="assets/images/catfish.jpg" alt="Catfish BBQ">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Catfish BBQ</h3>
+                            <span class="price">₦7,500</span>
+                        </div>
+                        <p>Grilled catfish with special sauce and sides</p>
+                        <span class="category-badge">Specials</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="specials">
+                    <div class="menu-item-image">
+                        <img src="assets/images/abacha and fish.jpeg" alt="Abacha & Fish">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Abacha & Fish</h3>
+                            <span class="price">₦4,500</span>
+                        </div>
+                        <p>African salad with dried fish and palm oil dressing</p>
+                        <span class="category-badge">Specials</span>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop" alt="Zobo">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Zobo</h3>
+                            <span class="price">₦800</span>
+                        </div>
+                        <p>Refreshing hibiscus drink with ginger and fruits</p>
+                        <span class="category-badge">Drinks</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=300&fit=crop" alt="Chapman">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Chapman</h3>
+                            <span class="price">₦1,200</span>
+                        </div>
+                        <p>Classic Nigerian cocktail with mixed fruits</p>
+                        <span class="category-badge">Drinks</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop" alt="Smoothies">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Smoothies</h3>
+                            <span class="price">₦1,500</span>
+                        </div>
+                        <p>Fresh fruit smoothies - various flavors available</p>
+                        <span class="category-badge">Drinks</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop" alt="Water">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Water</h3>
+                            <span class="price">₦300</span>
+                        </div>
+                        <p>Bottled table water</p>
+                        <span class="category-badge">Drinks</span>
                     </div>
                 </div>
 
