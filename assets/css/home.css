@@ -1,6 +1,6 @@
-/* ========================================
+/*
    HERO SECTION
-======================================== */
+ */
 .hero {
     position: relative;
     height: 100vh;
@@ -64,9 +64,8 @@
     flex-wrap: wrap;
 }
 
-/* ========================================
-   FEATURED DISHES SECTION
-======================================== */
+
+/* FEATURED DISHES SECTION */
 .featured {
     padding: 5rem 0;
     background: var(--white-bg);
