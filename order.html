@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order your favorite Nigerian dishes online">
+    <title>Order Online - Eatery 24/7</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/order.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">EATERY 24/7</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="order.html" class="nav-link active">Order</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Header -->
+    <section class="order-header">
+        <div class="container">
+            <h1>Order Online</h1>
+            <p>Select your favorite dishes and add to cart</p>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <div class="container">
+            <div class="order-layout">
+                
+                <!-- Menu Items for Ordering -->
+                <div class="order-menu">
+                    <div class="order-filter">
+                        <button class="order-filter-btn active" data-category="all">All</button>
+                        <button class="order-filter-btn" data-category="starters">Starters</button>
+                        <button class="order-filter-btn" data-category="main">Main</button>
+                        <button class="order-filter-btn" data-category="proteins">Proteins</button>
+                        <button class="order-filter-btn" data-category="soups">Soups</button>
+                        <button class="order-filter-btn" data-category="specials">Specials</button>
+                        <button class="order-filter-btn" data-category="drinks">Drinks</button>
+                    </div>
+
+                    <div class="order-items" id="orderItems">
+                        <!-- Items will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="cart-sidebar">
+                    <div class="cart-header">
+                        <h2>Your Cart</h2>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    
+                    <div class="cart-items" id="cartItems">
+                        <div class="empty-cart">
+                            <p>Your cart is empty</p>
+                            <p class="empty-cart-subtitle">Add items to get started</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">₦0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span id="deliveryFee">₦500.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total">₦0.00</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-checkout" id="checkoutBtn" disabled>
+                        Proceed to Checkout
+                    </button>
+                    <button class="btn btn-secondary btn-clear" id="clearCartBtn">
+                        Clear Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EATERY 24/7</h3>
+                    <p>Fine dining experience, available around the clock.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Gourmet Street</li>
+                        <li>+1 (555) 247-2477</li>
+                        <li>hello@eatery247.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eatery 24/7. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/order.js"></script>
+</body>
+</html>
