@@ -119,6 +119,10 @@
     border: 1px solid var(--border-color);
     text-align: center;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .value-card:hover {
